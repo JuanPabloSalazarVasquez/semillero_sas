@@ -7,6 +7,11 @@ const bodyParser = require("body-parser");
 const app = express();
 //Imports close
 
+//Bienvenida
+app.get('/', (req, res) => {
+    res.send('<h1>¡Bienvenido a la base de datos de Semillero S.A.S.!</h1>');
+});
+//Bienvenida close
 
 //Middlewares
 app.use(bodyParser.urlencoded({ extended: false }));
